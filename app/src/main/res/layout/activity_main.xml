@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emretekin.supportlibraryv28additions.ActivityMain">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sample_bottomAppbar_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="@string/bottom_appbar"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sample_materialButton_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="@string/material_button"
+        app:backgroundTint="@color/colorAccent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sample_chip_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="@string/chip"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sample_chip_group_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="@string/chip_group"
+        app:backgroundTint="@color/colorAccent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sample_materialcardview_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="@string/material_cardview"
+        app:backgroundTint="@color/colorPrimary" />
+</LinearLayout>

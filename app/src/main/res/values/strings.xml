@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Support Library v28 Additions</string>
+
+    <string name="bottom_appbar">Bottom AppBar</string>
+    <string name="material_button">Material Button</string>
+    <string name="chip">Chip</string>
+    <string name="chip_group">Chip Group</string>
+    <string name="material_cardview">Material Cardview</string>
+</resources>
