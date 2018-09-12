@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BottomAppBarActivity" />
+        <activity android:name=".MaterialButtonActivity" />
+        <activity android:name=".ChipActivity" />
+        <activity android:name=".ChipGroupActivity" />
+        <activity android:name=".MaterialCardviewActivity"></activity>
     </application>
 
 </manifest>
