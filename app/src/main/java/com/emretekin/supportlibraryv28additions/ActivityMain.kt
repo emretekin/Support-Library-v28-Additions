@@ -1,8 +1,13 @@
 package com.emretekin.supportlibraryv28additions
 
+import android.app.Activity
+import android.content.ClipData.newIntent
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.button.MaterialButton
+import android.support.design.chip.Chip
 import android.widget.Toast
 
 class ActivityMain : AppCompatActivity() {
@@ -30,10 +35,10 @@ class ActivityMain : AppCompatActivity() {
     }
 
     private fun setListeners(){
-        bottomAppbar.setOnClickListener {}
-        materialButton.setOnClickListener {}
-        chip.setOnClickListener {}
-        chipGroup.setOnClickListener {}
-        materialCardview.setOnClickListener {}
+        bottomAppbar.setOnClickListener { startActivity(Intent(this, BottomAppBarActivity::class.java)) }
+        materialButton.setOnClickListener { startActivity(Intent(this, MaterialButtonActivity::class.java)) }
+        chip.setOnClickListener { startActivity(Intent(this, ChipActivity::class.java)) }
+        chipGroup.setOnClickListener { startActivity(Intent(this, ChipGroupActivity::class.java)) }
+        materialCardview.setOnClickListener { startActivity(Intent(this, MaterialCardviewActivity::class.java)) }
     }
 }
