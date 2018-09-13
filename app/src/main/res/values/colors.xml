@@ -6,4 +6,10 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
+    <!--Google Colors-->
+    <color name="gBlue">#4285F4</color>
+    <color name="gGreen">#34A853</color>
+    <color name="gYellow">#FBBC05</color>
+    <color name="gRed">#EA4335</color>
 </resources>

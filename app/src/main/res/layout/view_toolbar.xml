@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/gRed">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/social_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:elevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/arrow_imageview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:foreground="?selectableItemBackgroundBorderless"
+                        android:padding="16dp"
+                        android:src="@drawable/icon_back_arrow_white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/toolbar_title_textview"
+                        style="@style/ToolbarTitleTextView"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
