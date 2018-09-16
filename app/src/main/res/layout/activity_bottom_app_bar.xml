@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.emretekin.supportlibraryv28additions.BottomAppBarActivity">
 
-    <include layout="@layout/view_toolbar"/>
+    <include layout="@layout/view_toolbar" />
 
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:backgroundTint="@color/gBlue"
-        app:fabAttached="true"
+        app:fabAttached="false"
         app:fabCradleVerticalOffset="12dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -24,8 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        app:backgroundTint="@color/gGreen"
         android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/gGreen"
         app:layout_anchor="@+id/bottom_appbar" />
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/fabAttached_button"
+        style="@style/MainDefaultButton"
+        android:text="Toggle BottomAppBar FabAttached"
+        app:backgroundTint="@color/colorPrimary" />
 
 </android.support.design.widget.CoordinatorLayout>
