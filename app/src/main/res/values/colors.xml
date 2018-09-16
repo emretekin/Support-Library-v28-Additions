@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/gBlue</color>
+    <color name="colorPrimaryDark">@color/gDarkBlue</color>
+    <color name="colorAccent">@color/gYellow</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
-    <!--Google Colors-->
-    <color name="gBlue">#4285F4</color>
-    <color name="gGreen">#34A853</color>
-    <color name="gYellow">#FBBC05</color>
-    <color name="gRed">#EA4335</color>
+    <!--Google IO Colors-->
+    <color name="gBlue">#2979FF</color>
+    <color name="gDarkBlue">#2469dc</color>
+    <color name="gGreen">#1CE8B5</color>
+    <color name="gYellow">#FDD933</color>
+    <color name="gRed">#FF6B02</color>
 </resources>
