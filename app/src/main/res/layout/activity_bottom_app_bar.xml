@@ -6,16 +6,59 @@
     android:layout_height="match_parent"
     tools:context="com.emretekin.supportlibraryv28additions.BottomAppBarActivity">
 
-    <include layout="@layout/view_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/view_toolbar" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/fabAttached_button"
+            style="@style/MainDefaultButton"
+            android:text="Toggle BottomAppBar FabAttached"
+            app:backgroundTint="@color/gDarkBlue" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/fabAlignment_button"
+            style="@style/MainDefaultButton"
+            android:text="Toggle Fab AlignmentMode"
+            app:backgroundTint="@color/gDarkBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/fabCradleVerticalOffset_button"
+                style="@style/MainDefaultButton"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="Increase Fab CradleVerticalOffset"
+                app:backgroundTint="@color/gBlue" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/dec_fabCradleVerticalOffset_button"
+                style="@style/MainDefaultButton"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="Deccrease Fab CradleVerticalOffset"
+                app:backgroundTint="@color/gBlue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:backgroundTint="@color/gBlue"
+        android:backgroundTint="@color/gYellow"
         app:fabAttached="false"
-        app:fabCradleVerticalOffset="12dp"
+        app:fabCradleVerticalOffset="16dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -27,12 +70,5 @@
         android:src="@drawable/ic_add_white_24dp"
         app:backgroundTint="@color/gGreen"
         app:layout_anchor="@+id/bottom_appbar" />
-
-
-    <android.support.design.button.MaterialButton
-        android:id="@+id/fabAttached_button"
-        style="@style/MainDefaultButton"
-        android:text="Toggle BottomAppBar FabAttached"
-        app:backgroundTint="@color/colorPrimary" />
 
 </android.support.design.widget.CoordinatorLayout>
