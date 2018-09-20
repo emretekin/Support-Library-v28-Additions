@@ -4,6 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.emretekin.supportlibraryv28additions.MaterialButtonActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_toolbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Default Material Button" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton1"
+                style="@style/MainDefaultButton"
+                android:text="Material Button 1"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button with\n- CornerRadius 8dp\n- backgroundTint blue" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton2"
+                style="@style/MainDefaultButton"
+                android:backgroundTint="@color/gBlue"
+                android:text="Material Button 2"
+                android:textSize="12sp"
+                app:cornerRadius="8dp" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button with Icon\n- cornerRadius 8dp\n- backgroundTint blue\n- iconPadding 12dp " />
+
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton3"
+                style="@style/MainDefaultButton"
+                android:backgroundTint="@color/gBlue"
+                android:gravity="left|center"
+                android:text="Material Button 3"
+                android:textSize="12sp"
+                app:cornerRadius="8dp"
+                app:icon="@android:drawable/ic_lock_idle_alarm"
+                app:iconPadding="12dp" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button with Icon\n- cornerRadius 8dp\n- backgroundTint blue\n- iconPadding 12dp\n- additionalPaddingLeftForIcon 48dp " />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton4"
+                style="@style/MainDefaultButton"
+                android:backgroundTint="@color/gBlue"
+                android:gravity="left|center"
+                android:text="Material Button 4"
+                android:textSize="12sp"
+                app:additionalPaddingLeftForIcon="48dp"
+                app:cornerRadius="8dp"
+                app:icon="@android:drawable/ic_lock_idle_alarm"
+                app:iconPadding="12dp" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Default Material Button\n- cornerRadius 8dp\n- backgroundTint blue\n- app:rippleColor gGreen" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton5"
+                style="@style/MainDefaultButton"
+                android:backgroundTint="@color/gBlue"
+                android:text="Material Button 5"
+                android:textSize="12sp"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/gGreen" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button\n- cornerRadius 8dp\n- app:strokeColor gRed\n- app:app:strokeWidth 2dp\n- app:rippleColor gDarkBlue" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mButton6"
+                style="@style/MainDefaultButton"
+                android:text="Material Button 6"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/gDarkBlue"
+                app:strokeColor="@color/gBlue"
+                app:strokeWidth="2dp" />
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button\n- style: Widget.MaterialComponents.Button.UnelevatedButton" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/material_unelevated_button"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="unelevated_button" />
+
+
+            <!--Other Sample--><!--Other Sample--><!--Other Sample--><!--Other Sample-->
+            <View style="@style/VerticalLineViewStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Material Button\n- style: Widget.MaterialComponents.Button.TextButton" />
+
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/material_text_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="text_button_label" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

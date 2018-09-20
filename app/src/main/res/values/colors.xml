@@ -6,6 +6,7 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="greyLight">#8cc7c7c7</color>
 
     <!--Google IO Colors-->
     <color name="gBlue">#2979FF</color>
