@@ -4,10 +4,12 @@ import android.app.Activity
 import android.content.ClipData.newIntent
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.button.MaterialButton
 import android.support.design.chip.Chip
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatTextView
 import android.support.v7.widget.Toolbar
 import android.view.View
@@ -32,6 +34,10 @@ class ActivityMain : AppCompatActivity() {
         createViews()
         setValues()
         setListeners()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setNavigationBarColor(ContextCompat.getColor(applicationContext, R.color.gBlue))
+        }
     }
 
     private fun createViews(){

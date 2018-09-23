@@ -16,11 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BottomAppBarActivity" />
-        <activity android:name=".MaterialButtonActivity" />
-        <activity android:name=".ChipActivity" />
-        <activity android:name=".ChipGroupActivity" />
-        <activity android:name=".MaterialCardviewActivity"></activity>
+        <activity
+            android:name=".BottomAppBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MaterialButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChipGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MaterialCardviewActivity"
+            android:screenOrientation="portrait" />
     </application>
-
 </manifest>

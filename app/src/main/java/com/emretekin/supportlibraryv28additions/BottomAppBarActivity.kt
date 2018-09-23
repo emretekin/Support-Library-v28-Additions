@@ -1,12 +1,14 @@
 package com.emretekin.supportlibraryv28additions
 
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.support.design.bottomappbar.BottomAppBar
 import android.support.design.button.MaterialButton
 import android.support.design.widget.FloatingActionButton
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatTextView
 import android.support.v7.widget.Toolbar
 import android.view.Menu
@@ -33,6 +35,10 @@ class BottomAppBarActivity : AppCompatActivity() {
         setValues()
         setListeners()
         setBottomBarMenu()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setNavigationBarColor(ContextCompat.getColor(applicationContext, R.color.gRed))
+        }
     }
 
     private fun createViews() {

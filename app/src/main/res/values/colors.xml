@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">@color/gBlue</color>
     <color name="colorPrimaryDark">@color/gDarkBlue</color>
-    <color name="colorAccent">@color/gYellow</color>
+    <color name="colorAccent">@color/gGreen</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>

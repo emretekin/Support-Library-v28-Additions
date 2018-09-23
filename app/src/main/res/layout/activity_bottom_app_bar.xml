@@ -47,18 +47,16 @@
                 android:text="Deccrease Fab CradleVerticalOffset"
                 app:backgroundTint="@color/gBlue" />
         </LinearLayout>
-
     </LinearLayout>
-
 
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:backgroundTint="@color/gYellow"
+        android:backgroundTint="@color/gBlue"
         app:fabAttached="false"
-        app:fabCradleVerticalOffset="16dp"
+        app:fabCradleVerticalOffset="8dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -67,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:src="@drawable/ic_add_white_24dp"
+        android:src="@drawable/ic_android"
         app:backgroundTint="@color/gGreen"
         app:layout_anchor="@+id/bottom_appbar" />
 
