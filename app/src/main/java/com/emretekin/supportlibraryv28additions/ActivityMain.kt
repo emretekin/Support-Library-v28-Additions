@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.ClipData.newIntent
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -66,9 +67,5 @@ class ActivityMain : AppCompatActivity() {
 
     fun Toolbar.hideBackButton() {
         arrowImageview.visibility = View.GONE;
-    }
-
-    private fun goToGithubPage(){
-        //https://github.com/emretekin/Support-Library-v28-Additions
     }
 }
