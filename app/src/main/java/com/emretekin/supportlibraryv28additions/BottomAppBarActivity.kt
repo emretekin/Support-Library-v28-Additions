@@ -1,6 +1,7 @@
 package com.emretekin.supportlibraryv28additions
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatTextView
 import android.support.v7.widget.Toolbar
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_bottom_app_bar.*
 import kotlin.math.nextUp
@@ -69,14 +71,36 @@ class BottomAppBarActivity : AppCompatActivity() {
         arrowImageview.setOnClickListener { onBackPressed() }
         fabAttachedButton.setOnClickListener { bottomAppbar.toggleFabAttached() }
         fabAlignmentButton.setOnClickListener { bottomAppbar.toggleAlignment() }
-        fabCradleVerticalOffsetButton.setOnClickListener {bottomAppbar.increaseCradleVerticalOffset(30) }
-        decFabCradleVerticalOffsetButton.setOnClickListener {bottomAppbar.increaseCradleVerticalOffset(0) }
+        fabCradleVerticalOffsetButton.setOnClickListener { bottomAppbar.increaseCradleVerticalOffset(30) }
+        decFabCradleVerticalOffsetButton.setOnClickListener { bottomAppbar.increaseCradleVerticalOffset(0) }
 
-        fab.setOnClickListener { onBackPressed() }
+        fab.setOnClickListener { goToSomewhere("https://medium.com/@emre.tekin/android-design-support-library-v28-3e0ea4d9f688") }
     }
 
     private fun setBottomBarMenu() {
         bottomAppbar.replaceMenu(R.menu.bottom_appbar_menu)
+        setSupportActionBar(bottomAppbar)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.bottom_appbar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item!!.itemId) {
+            R.id.github -> goToSomewhere("https://github.com/emretekin/Support-Library-v28-Additions")
+            R.id.material -> goToSomewhere("https://material.io/develop/android/components/bottom-app-bar/")
+            R.id.about -> goToSomewhere("https://medium.com/@emre.tekin/android-design-support-library-v28-3e0ea4d9f688")
+        }
+        return true
+    }
+
+    private fun goToSomewhere(url: String) {
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
     }
 
     //My Extension Function for BottomAppBar
