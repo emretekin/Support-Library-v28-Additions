@@ -61,7 +61,7 @@ class ActivityMain : AppCompatActivity() {
         bottomAppbar.setOnClickListener { startActivity(Intent(this, BottomAppBarActivity::class.java)) }
         materialButton.setOnClickListener { startActivity(Intent(this, MaterialButtonActivity::class.java)) }
         chip.setOnClickListener { startActivity(Intent(this, ChipActivity::class.java)) }
-        chipGroup.setOnClickListener { startActivity(Intent(this, ChipGroupActivity::class.java)) }
+        chipGroup.setOnClickListener { startActivity(Intent(this, ChipActivity::class.java)) }
         materialCardview.setOnClickListener { startActivity(Intent(this, MaterialCardviewActivity::class.java)) }
     }
 
