@@ -15,6 +15,13 @@
         <include layout="@layout/view_toolbar" />
 
         <android.support.design.button.MaterialButton
+            android:id="@+id/bottomAppBarDetail_button"
+            style="@style/MainDefaultButton"
+            android:text="BottomAppBar with Detail"
+            app:backgroundTint="@color/gGreen"
+            app:rippleColor="@color/white" />
+
+        <android.support.design.button.MaterialButton
             android:id="@+id/fabAttached_button"
             style="@style/MainDefaultButton"
             android:text="Toggle BottomAppBar FabAttached"
@@ -35,16 +42,16 @@
                 android:id="@+id/fabCradleVerticalOffset_button"
                 style="@style/MainDefaultButton"
                 android:layout_weight="1"
-                android:textSize="12sp"
                 android:text="Increase Fab CradleVerticalOffset"
+                android:textSize="12sp"
                 app:backgroundTint="@color/gBlue" />
 
             <android.support.design.button.MaterialButton
                 android:id="@+id/dec_fabCradleVerticalOffset_button"
                 style="@style/MainDefaultButton"
                 android:layout_weight="1"
-                android:textSize="12sp"
                 android:text="Deccrease Fab CradleVerticalOffset"
+                android:textSize="12sp"
                 app:backgroundTint="@color/gBlue" />
         </LinearLayout>
     </LinearLayout>
