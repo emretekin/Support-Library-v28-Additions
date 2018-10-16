@@ -26,6 +26,7 @@ class BottomAppBarActivity : AppCompatActivity() {
     private lateinit var fab: FloatingActionButton;
     private lateinit var fabAttachedButton: MaterialButton;
     private lateinit var fabAlignmentButton: MaterialButton;
+    private lateinit var bottomAppBarDetailButton: MaterialButton;
     private lateinit var fabCradleVerticalOffsetButton: MaterialButton;
     private lateinit var decFabCradleVerticalOffsetButton: MaterialButton;
 
@@ -51,6 +52,7 @@ class BottomAppBarActivity : AppCompatActivity() {
         fabAlignmentButton = findViewById(R.id.fabAlignment_button);
         fabCradleVerticalOffsetButton = findViewById(R.id.fabCradleVerticalOffset_button);
         decFabCradleVerticalOffsetButton = findViewById(R.id.dec_fabCradleVerticalOffset_button);
+        bottomAppBarDetailButton = findViewById(R.id.bottomAppBarDetail_button);
         arrowImageview = findViewById(R.id.arrow_imageview);
     }
 
@@ -73,6 +75,7 @@ class BottomAppBarActivity : AppCompatActivity() {
         fabAlignmentButton.setOnClickListener { bottomAppbar.toggleAlignment() }
         fabCradleVerticalOffsetButton.setOnClickListener { bottomAppbar.increaseCradleVerticalOffset(30) }
         decFabCradleVerticalOffsetButton.setOnClickListener { bottomAppbar.increaseCradleVerticalOffset(0) }
+        bottomAppBarDetailButton.setOnClickListener { startActivity(Intent(this, BottomAppBarDetailActivity::class.java)) }
 
         fab.setOnClickListener { goToSomewhere("https://medium.com/@emre.tekin/android-design-support-library-v28-3e0ea4d9f688") }
     }
