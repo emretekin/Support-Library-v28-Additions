@@ -61,6 +61,7 @@ class BottomAppBarDetailActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item!!.itemId) {
+            android.R.id.home -> openMenu()
             R.id.github -> goToSomewhere(GITHUB_URL)
             R.id.material -> goToSomewhere(MATERIAL_IO_URL)
             R.id.about -> goToSomewhere(MEDIUM_URL)
@@ -72,6 +73,11 @@ class BottomAppBarDetailActivity : AppCompatActivity() {
         val i = Intent(Intent.ACTION_VIEW)
         i.data = Uri.parse(url)
         startActivity(i)
+    }
+
+    private fun openMenu() {
+        val bottomNavDrawerFragment = BottomNavigationDrawerFragment()
+        bottomNavDrawerFragment.show(supportFragmentManager, bottomNavDrawerFragment.tag)
     }
 }
 

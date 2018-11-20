@@ -14,7 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/gBlue"
-        app:fabAttached="false"
+        app:fabAttached="true"
+        android:gravity="center"
+        app:navigationIcon="@drawable/ic_menu_white_24dp"
+        app:buttonGravity="bottom"
         app:fabCradleVerticalOffset="8dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
