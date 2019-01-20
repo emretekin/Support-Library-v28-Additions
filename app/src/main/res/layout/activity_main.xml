@@ -15,37 +15,48 @@
         android:scaleType="centerCrop"
         android:src="@drawable/bg_v28_cover" />
 
-    <android.support.design.button.MaterialButton
-        android:id="@+id/sample_bottomAppbar_materialButton"
-        style="@style/MainDefaultButton"
-        android:text="@string/bottom_appbar"
-        app:backgroundTint="@color/gRed"
-        app:cornerRadius="8dp" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <android.support.design.button.MaterialButton
-        android:id="@+id/sample_materialButton_materialButton"
-        style="@style/MainDefaultButton"
-        android:text="@string/material_button"
-        app:backgroundTint="@color/gGreen"
-        app:cornerRadius="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <android.support.design.button.MaterialButton
-        android:id="@+id/sample_chip_materialButton"
-        style="@style/MainDefaultButton"
-        android:text="@string/chip"
-        app:backgroundTint="@color/gRed"
-        app:cornerRadius="8dp" />
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sample_bottomAppbar_materialButton"
+                style="@style/MainDefaultButton"
+                android:text="@string/bottom_appbar"
+                app:backgroundTint="@color/gRed"
+                app:cornerRadius="8dp" />
 
-    <android.support.design.button.MaterialButton
-        android:id="@+id/sample_chip_group_materialButton"
-        style="@style/MainDefaultButton"
-        android:text="@string/chip_group"
-        app:backgroundTint="@color/gGreen" />
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sample_materialButton_materialButton"
+                style="@style/MainDefaultButton"
+                android:text="@string/material_button"
+                app:backgroundTint="@color/gGreen"
+                app:cornerRadius="16dp" />
 
-    <android.support.design.button.MaterialButton
-        android:id="@+id/sample_materialcardview_materialButton"
-        style="@style/MainDefaultButton"
-        android:text="@string/material_cardview"
-        app:backgroundTint="@color/gRed"
-        app:cornerRadius="16dp" />
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sample_chip_materialButton"
+                style="@style/MainDefaultButton"
+                android:text="@string/chip"
+                app:backgroundTint="@color/gRed"
+                app:cornerRadius="8dp" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sample_chip_group_materialButton"
+                style="@style/MainDefaultButton"
+                android:text="@string/chip_group"
+                app:backgroundTint="@color/gGreen" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/sample_materialcardview_materialButton"
+                style="@style/MainDefaultButton"
+                android:text="@string/material_cardview"
+                app:backgroundTint="@color/gRed"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

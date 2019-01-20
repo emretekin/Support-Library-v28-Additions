@@ -31,7 +31,12 @@
         <activity
             android:name=".MaterialCardviewActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".BottomAppBarDetailActivity" />
+        <activity
+            android:name=".BottomAppBarDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TextFieldActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

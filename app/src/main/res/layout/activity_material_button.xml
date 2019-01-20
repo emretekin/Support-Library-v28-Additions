@@ -149,7 +149,7 @@
                 <android.support.design.button.MaterialButton
                     android:id="@+id/material_unelevated_button"
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="unelevated_button" />
@@ -168,7 +168,7 @@
                 <android.support.design.button.MaterialButton
                     android:id="@+id/material_text_button"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="Material Text Button" />

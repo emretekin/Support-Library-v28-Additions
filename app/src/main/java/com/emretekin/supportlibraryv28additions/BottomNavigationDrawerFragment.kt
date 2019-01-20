@@ -3,6 +3,7 @@ package com.emretekin.supportlibraryv28additions
 import android.content.Context
 import android.os.Bundle
 import android.support.design.widget.BottomSheetDialogFragment
+import android.support.design.widget.NavigationView
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -14,21 +15,23 @@ import android.widget.Toast
  */
 class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
 
+    private lateinit var navigationView: NavigationView;
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+//        navigationView = view!!.findViewById(R.id.navigation_view)
         return inflater.inflate(R.layout.fragment_bottomsheet, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-//        navigation_view.setNavigationItemSelectedListener { menuItem ->
+
+//        navigationView.setNavigationItemSelectedListener { menuItem ->
 //            // Bottom Navigation Drawer menu item clicks
 //            when (menuItem!!.itemId) {
-//                R.id.nav1 -> context!!.toast(getString(R.string.nav1_clicked))
-//                R.id.nav2 -> context!!.toast(getString(R.string.nav2_clicked))
-//                R.id.nav3 -> context!!.toast(getString(R.string.nav3_clicked))
+//                R.id.nav1 -> context!!.toast("nav1 Clicked")
+//                R.id.nav2 -> context!!.toast("nav2 Clicked")
+//                R.id.nav3 -> context!!.toast("nav3 Clicked")
 //            }
-//            // Add code here to update the UI based on the item selected
-//            // For example, swap UI fragments here
 //            true
 //        }
     }
