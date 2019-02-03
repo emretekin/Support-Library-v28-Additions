@@ -4,6 +4,7 @@ Work in progress
 
 This project contains the implementation details for Android Support Library v28 Additions.
 - BottomAppBar
+- BottomAppBar with Navigation Drawer
 - Material Button
 - Chip
 - Chip Group
