@@ -18,26 +18,34 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
     private lateinit var navigationView: NavigationView;
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-//        navigationView = view!!.findViewById(R.id.navigation_view)
         return inflater.inflate(R.layout.fragment_bottomsheet, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
-//        navigationView.setNavigationItemSelectedListener { menuItem ->
-//            // Bottom Navigation Drawer menu item clicks
-//            when (menuItem!!.itemId) {
-//                R.id.nav1 -> context!!.toast("nav1 Clicked")
-//                R.id.nav2 -> context!!.toast("nav2 Clicked")
-//                R.id.nav3 -> context!!.toast("nav3 Clicked")
-//            }
-//            true
-//        }
+        createViews()
+        setListeners()
     }
 
-    // This is an extension method for easy Toast call
-    fun Context.toast(message: CharSequence) {
+    private fun createViews() {
+        navigationView = view!!.findViewById(R.id.navigation_view)
+    }
+
+    private fun setListeners() {
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            // Bottom Navigation Drawer menu item clicks
+            when (menuItem.itemId) {
+                R.id.nav1 -> context!!.toast("nav1 Clicked")
+                R.id.nav2 -> context!!.toast("nav2 Clicked")
+                R.id.nav3 -> context!!.toast("nav3 Clicked")
+            }
+            true
+
+        }
+    }
+
+    // This is an extension method in Context for showing easy Toast
+    private fun Context.toast(message: CharSequence) {
         val toast = Toast.makeText(this, message, Toast.LENGTH_SHORT)
         toast.setGravity(Gravity.BOTTOM, 0, 600)
         toast.show()

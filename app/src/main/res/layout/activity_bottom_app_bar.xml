@@ -17,6 +17,8 @@
         <android.support.design.button.MaterialButton
             android:id="@+id/bottomAppBarDetail_button"
             style="@style/MainDefaultButton"
+            android:layout_height="100dp"
+            app:cornerRadius="16dp"
             android:text="Checkout BottomAppBar Detail"
             app:backgroundTint="@color/gGreen"
             app:rippleColor="@color/white" />

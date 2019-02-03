@@ -8,11 +8,11 @@
             android:title="Nav Item1" />
         <item
             android:id="@+id/nav2"
-            android:icon="@drawable/ic_android"
-            android:title="Nav Item3" />
+            android:icon="@drawable/ic_github"
+            android:title="Nav Item2" />
         <item
             android:id="@+id/nav3"
             android:icon="@drawable/ic_android"
-            android:title="Nav Item2" />
+            android:title="Nav Item3" />
     </group>
 </menu>
