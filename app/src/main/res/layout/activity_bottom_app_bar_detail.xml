@@ -8,17 +8,25 @@
 
     <include layout="@layout/view_toolbar" />
 
+    <android.support.design.button.MaterialButton
+        android:id="@+id/go_detail_materialButton"
+        style="@style/MainDefaultButton"
+        android:text="Go Detail"
+        android:visibility="gone"
+        app:backgroundTint="@color/gRed"
+        app:cornerRadius="8dp" />
+
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/gBlue"
-        app:fabAttached="true"
         android:gravity="center"
+        app:fabAttached="true"
+        app:fabCradleVerticalOffset="8dp"
         app:maxButtonHeight="40dp"
         app:navigationIcon="@drawable/ic_menu_white_24dp"
-        app:fabCradleVerticalOffset="8dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 

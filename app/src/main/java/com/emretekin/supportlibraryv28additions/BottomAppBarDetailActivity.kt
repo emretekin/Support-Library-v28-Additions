@@ -6,18 +6,23 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.support.design.bottomappbar.BottomAppBar
+import android.support.design.button.MaterialButton
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.widget.AppCompatTextView
+import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
 
+
 class BottomAppBarDetailActivity : AppCompatActivity() {
 
+    private lateinit var toolbar: Toolbar;
     private lateinit var toolbarTitle: AppCompatTextView;
     private lateinit var arrowImageview: ImageView;
     private lateinit var bottomAppbar: BottomAppBar;
     private lateinit var fab: FloatingActionButton;
+    private lateinit var goDetail: MaterialButton;
 
     private val GITHUB_URL = "https://github.com/emretekin/Support-Library-v28-Additions";
     private val MEDIUM_URL = "https://medium.com/@emre.tekin/android-design-support-library-v28-3e0ea4d9f688";
@@ -38,17 +43,25 @@ class BottomAppBarDetailActivity : AppCompatActivity() {
     }
 
     private fun createViews() {
+        toolbar = findViewById(R.id.toolbar);
         toolbarTitle = findViewById(R.id.toolbar_title_textview);
         arrowImageview = findViewById(R.id.arrow_imageview);
         bottomAppbar = findViewById(R.id.bottom_appbar);
         fab = findViewById(R.id.fab);
+        goDetail = findViewById(R.id.go_detail_materialButton);
     }
 
     private fun setListeners() {
         arrowImageview.setOnClickListener { onBackPressed() }
+        goDetail.setOnClickListener {
+            bottomAppbar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_END
+            bottomAppbar.replaceMenu(R.menu.bottomappbar_menu_secondary)
+            fab?.setImageDrawable(resources.getDrawable(R.drawable.ic_github))
+        }
     }
 
     private fun setBottomBarMenu() {
+//        setSupportActionBar(toolbar)
         bottomAppbar.replaceMenu(R.menu.bottom_appbar_menu)
         setSupportActionBar(bottomAppbar)
     }
